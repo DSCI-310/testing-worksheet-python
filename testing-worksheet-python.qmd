@@ -1,9 +1,6 @@
 ---
 title: "Testing in Python worksheet"
 format: html
-editor: visual
-  markdown: 
-    wrap: 72
 ---
 
 Welcome to the testing in R worksheet! This is designed to give you some hands-on practice with testing syntax in R. Run the cell below to load the libraries needed for this worksheet, and to check your answers as you go!
@@ -24,7 +21,7 @@ Write a function called `mpg_to_kml` that takes a vector of numbers in miles per
 def mpg_to_kml():
   pass
 
-mpg_to_kml(1)
+#mpg_to_kml(1)
 ```
 
 ### Exercise 2
