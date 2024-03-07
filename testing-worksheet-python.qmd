@@ -83,8 +83,8 @@ def: mpg_to_kml(x):
 
 ```         
 def test_mpg_to_kml():
-'''Should return expected values from converting miles to gallon 
-to kilometers to litres.'''
+    '''Should return expected values from converting miles to gallon 
+    to kilometers to litres.'''
     assert mpg_to_kml(1) == pytest.approx(0.425144)
     assert mpg_to_kml(2) == pytest.approx(0.850288)
     assert mpg_to_kml(1) == pytest.approx(4.25144) 
@@ -93,7 +93,7 @@ to kilometers to litres.'''
 ### Exercise 3 solution
 
 ```         
-def: mpg_to_kml(x):
+def mpg_to_kml(x):
     if not isinstance(x, (int, float)):
         raise ValueError("Input must be a number.")
     return x * 0.425144
@@ -103,7 +103,7 @@ def: mpg_to_kml(x):
 
 ```
 def test_mpg_to_kml():
-'''Should throw exceptions when strings or lists are given as input.'''         
+    '''Should throw exceptions when strings or lists are given as input.'''         
     with pytest.raises(ValueError):
         mpg_to_kml("a")
 
